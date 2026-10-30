@@ -1,11 +1,11 @@
 def has_duplicates(numbers):
-    seen = []
+    seen = set()
 
     for number in numbers:
         if number in seen:
             return True
 
-        seen.append(number)
+        seen.add(number)
 
     return False
 
